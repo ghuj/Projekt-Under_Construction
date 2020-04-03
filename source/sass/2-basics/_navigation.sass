@@ -1,0 +1,97 @@
+*
+  box-sizing: border-box
+
+.header
+  display: flex
+  background: tomato  
+
+.logo
+  width: 226px
+  height: 84px
+  background: 
+    image: url(../img/logo.svg)
+    size: Contain
+    repeat: no-repeat
+  margin: 10px 0 10px  
+
+.navbar 
+  margin: 21px -3px 0 0  
+  font: 16px/18px 'CenturyGothicRegular', Arial, Helvetica, sans-serif
+  text-transform: uppercase
+  text-align: end
+  letter-spacing: -1px
+  background-color: 
+  display: inline-block
+  overflow: hidden
+  ul 
+    //background-color: blue
+    display: inline-block
+  li       
+    padding: 0 20px 0 0
+    display: inline-block
+  a
+    color: $white
+    margin: 10px
+    text-decoration: none
+    &:hover
+      color: $petrol
+  .active a
+    color: #fff
+
+//* 4. Footer - Styles
+
+
+.footer
+  background: lightgreen
+.footer-nav
+  height: 370px
+  padding: 5%
+  display: inline-block
+  img
+    margin: 0% auto
+    text-align: center
+nav  
+  ul
+   display: inline-block    
+   overflow: hidden
+   text-align: center   
+  li
+    display: inline-block
+    padding: 20px
+    a
+      color: #fff 
+    a:hover
+      background-color: blue
+
+.footer-end    
+    padding-top: 40px
+    text-align: center
+    background-color: $black    
+    color: $white
+
+@media all and (min-width: 800px)  
+
+  .footer
+    order: 4
+
+  .footer-end
+    order: 5  
+
+//@media (min-width: 960px)
+
+  .header    
+    padding: 0px
+    display: inline    
+   
+  .logo
+    background: 
+      size: Contain
+      repeat: no-repeat
+      
+  .navbar  
+    display: flex
+    width: 100%
+    height: 100%
+    justify-content: center  
+
+  

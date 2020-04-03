@@ -1,0 +1,68 @@
+.wrapper
+  background: #fff
+  font-family: 'Lato', sans-serif
+  color: #0E2E47
+  text-align: center
+  padding: 0 20px 0 20px
+
+form  
+  margin: 7% auto
+
+.header-text
+  font-size: 35px
+  text-transform: uppercase
+  letter-spacing: 5px
+  
+.description // container für text
+  font-size: 14px
+  letter-spacing: 1px
+  line-height: 1.3em
+  margin: -2px 0 45px
+
+.input 
+  max-width: 600px  
+  display: flex
+  margin: 0 20% 0 20%
+  align-items: center
+
+@media (max-width: 720px)
+  .input
+    margin: 0px 0px  
+  
+  .description  
+    font-size: 7px
+
+.button
+  height: 44px
+  width: 44px
+  border: none
+  margin-left: 20px
+
+#email
+  width: 75%
+  background: #fff
+  font-family: inherit
+  color: #737373
+  letter-spacing: 1px
+  text-indent: 5%
+  border-radius: 5px 0 0 5px
+  box-shadow: 0 0 2px #20303c
+
+#submit
+  width: 100%
+  height: 46px
+  background: #20303c
+  font-family: inherit
+  font-weight: bold
+  color: #ffff
+  letter-spacing: 1px
+  border-radius: 0 5px 5px 0
+  cursor: pointer
+  transition: background .3s ease-in-out
+  &:hover
+    background: #d45d7d
+
+input:focus
+  outline: none
+  outline: 2px solid #E86C8D
+  box-shadow: 0 0 2px #E86C8D
