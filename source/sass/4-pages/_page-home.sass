@@ -28,6 +28,26 @@ section
     padding: 10px
     flex: 1 100%
 
+.container
+  display: grid
+  height: 300px
+  display: flex
+  //background: black
+  
+.column-right   
+  display: grid
+  width: 100% 
+  height: 100%
+  background:
+    image: url(../img/uc.png)
+    repeat: no-repeat
+    size: Contain
+ 
+.column-left 
+  display: grid  
+  background: red 
+
+   
 .main
   text-align: left
   background: deepskyblue
@@ -45,6 +65,12 @@ section
 @media all and (min-width: 800px)
   .main
     flex: 3 0px
+
+  .column-right 
+    order: 1
+
+  .column-left
+    order: 2  
 
   .aside-1
     order: 1
